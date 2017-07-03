@@ -1,11 +1,11 @@
 {
-  "name": "react-canvas",
+  "name": "@craigmorton/react-canvas",
   "version": "1.3.0",
   "description": "High performance <canvas> rendering for React components",
   "main": "lib/ReactCanvas.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Flipboard/react-canvas.git"
+    "url": "https://github.com/CraigMorton/react-canvas.git"
   },
   "scripts": {},
   "keywords": [
@@ -14,7 +14,7 @@
   ],
   "author": "Michael Johnston <mj@flipboard.com>",
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/Flipboard/react-canvas",
+  "homepage": "https://github.com/CraigMorton/react-canvas",
   "bugs": {
     "url": "https://github.com/Flipboard/react-canvas/issues"
   },
