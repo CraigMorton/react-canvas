@@ -25,13 +25,10 @@
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
     "babel-preset-react": "^6.22.0",
-    "brfs": "^1.4.3",
     "del": "^2.2.2",
-    "envify": "^4.0.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "jest": "^18.1.0",
-    "transform-loader": "^0.2.3",
     "webpack": "^1.14.0",
     "webpack-stream": "^3.2.0"
   },
@@ -40,8 +37,8 @@
     "react-dom": "^15.0.0"
   },
   "dependencies": {
+    "@craigmorton/linebreak": "^0.4.5",
     "fbjs": "^0.8.8",
-    "linebreak": "^0.3.0",
     "scroller": "git://github.com/mjohnston/scroller"
   }
 }
