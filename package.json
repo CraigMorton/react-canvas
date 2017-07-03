@@ -7,9 +7,7 @@
     "type": "git",
     "url": "https://github.com/Flipboard/react-canvas.git"
   },
-  "scripts": {
-    "test": "./node_modules/.bin/jest"
-  },
+  "scripts": {},
   "keywords": [
     "react",
     "canvas"
@@ -20,9 +18,7 @@
   "bugs": {
     "url": "https://github.com/Flipboard/react-canvas/issues"
   },
-  "devDependencies": {
-    "jest": "^18.1.0"
-  },
+  "devDependencies": {},
   "peerDependencies": {
     "react": "^15.0.0",
     "react-dom": "^15.0.0"
