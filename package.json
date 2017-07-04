@@ -2,12 +2,14 @@
   "name": "@craigmorton/react-canvas",
   "version": "1.3.0",
   "description": "High performance <canvas> rendering for React components",
-  "main": "lib/ReactCanvas.js",
+  "main": "dist/ReactCanvas.cjs.min.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/CraigMorton/react-canvas.git"
   },
-  "scripts": {},
+  "scripts": {
+    "build": "node tools/rollup_build.js"
+  },
   "keywords": [
     "react",
     "canvas"
@@ -18,7 +20,15 @@
   "bugs": {
     "url": "https://github.com/Flipboard/react-canvas/issues"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "del": "^3.0.0",
+    "rollup": "^0.43.0",
+    "rollup-plugin-babili": "^3.1.0",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-sourcemaps": "^0.4.2"
+  },
   "peerDependencies": {
     "react": "^15.0.0",
     "react-dom": "^15.0.0"
