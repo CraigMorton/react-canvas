@@ -1,5 +1,12 @@
 # react-canvas
 
+This is a fork of [Flipboard/react-canvas](https://github.com/Flipboard/react-canvas) which:
+- Fixes all deprecation warnings from [React v15.5](https://facebook.github.io/react/blog/2017/04/07/react-v15.5.0.html#new-deprecation-warnings) in preparation for React v16
+- Converts to ES modules with a [Rollup](https://github.com/rollup/rollup) build process to create CommonJS and ES modules versions of this package.
+- Removes the need to use [brfs](https://github.com/substack/brfs) and `transform-loader` when using webpack.
+
+# Original repo's README
+
 [Introductory blog post](http://engineering.flipboard.com/2015/02/mobile-web)
 
 React Canvas adds the ability for React components to render to `<canvas>` rather than DOM.
