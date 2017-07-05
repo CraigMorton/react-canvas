@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@craigmorton/linebreak": "^0.4.5",
+    "create-react-class": "^15.6.0",
     "fbjs": "^0.8.8",
     "prop-types": "^15.5.10",
     "scroller": "git://github.com/mjohnston/scroller"
