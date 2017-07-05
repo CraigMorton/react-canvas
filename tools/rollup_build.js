@@ -15,6 +15,12 @@ const bundles = [
     plugins: [
     ],
   },
+  {
+    format: 'es',
+    dest: pkg.module,
+    plugins: [
+    ],
+  },
 ]
 
 const prePlugins = [
