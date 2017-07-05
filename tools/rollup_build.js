@@ -3,6 +3,7 @@ const pkg = require('../package.json')
 const del = require('del')
 
 const sourcemaps = require('rollup-plugin-sourcemaps')
+const babel = require('rollup-plugin-babel')
 const builtins = require('rollup-plugin-node-builtins')
 const nodeResolve = require('rollup-plugin-node-resolve')
 const commonjs = require('rollup-plugin-commonjs')
@@ -13,12 +14,31 @@ const bundles = [
     format: 'cjs',
     dest: pkg.main,
     plugins: [
+      babel({
+        exclude: 'node_modules/**',
+        babelrc: false,
+        plugins: [
+          'transform-class-properties',
+          'external-helpers',
+        ],
+        presets: [
+          ['es2015', {modules: false}]
+        ],
+      }),
     ],
   },
   {
     format: 'es',
     dest: pkg.module,
     plugins: [
+      babel({
+        exclude: 'node_modules/**',
+        babelrc: false,
+        plugins: [
+          'transform-class-properties',
+          'external-helpers',
+        ],
+      }),
     ],
   },
 ]
