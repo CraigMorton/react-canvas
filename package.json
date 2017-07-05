@@ -9,7 +9,9 @@
     "url": "https://github.com/CraigMorton/react-canvas.git"
   },
   "scripts": {
-    "build": "node tools/rollup_build.js"
+    "build": "node tools/rollup_build.js",
+    "prepublishOnly": "npm run build",
+    "postpublish": "rm -rf dist/"
   },
   "keywords": [
     "react",
